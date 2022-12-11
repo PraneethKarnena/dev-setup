@@ -7,5 +7,5 @@ cd .\project\
 
 poetry init
 poetry add django==3.2.16 django-environ psycopg2
-poetry -G dev black isort pre-commit django-debug-toolbar
+poetry add -G dev black isort pre-commit django-debug-toolbar
 poetry export -f requirements.txt --output requirements.txt --without-hashes --without-urls
