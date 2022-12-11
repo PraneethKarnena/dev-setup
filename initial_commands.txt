@@ -9,3 +9,8 @@ poetry init
 poetry add django==3.2.16 django-environ psycopg2
 poetry add -G dev black isort pre-commit django-debug-toolbar
 poetry export -f requirements.txt --output requirements.txt --without-hashes --without-urls
+
+django-admin startproject project .
+
+git init
+pre-commit install
