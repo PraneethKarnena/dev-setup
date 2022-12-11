@@ -12,7 +12,6 @@ charset = utf-8
 
 [*.py]
 max_line_length = 88
-ensure_newline_before_comments = true
 include_trailing_comma = true
 use_parentheses = true
 insert_final_newline = true
@@ -52,7 +51,6 @@ indent_size = 2
 indent_style = unset
 indent_size = unset
 max_line_length = unset
-ensure_newline_before_comments = false
 include_trailing_comma = false
 use_parentheses = false
 insert_final_newline = false
