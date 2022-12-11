@@ -1,0 +1,11 @@
+pyenv local 3.8.10
+python -m venv venv
+.\venv\Scripts\activate
+
+mkdir project
+cd .\project\
+
+poetry init
+poetry add django==3.2.16 django-environ psycopg2
+poetry -G dev black isort pre-commit django-debug-toolbar
+poetry export -f requirements.txt --output requirements.txt --without-hashes --without-urls
